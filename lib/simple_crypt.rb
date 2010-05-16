@@ -171,11 +171,11 @@ end
 
 class String
   
-  def s_encry(pass_phrase = "caidao")
+  def s_encry(pass_phrase = "test")
     Crypt::TEA.encrypt(self,pass_phrase)
   end
   
-  def s_decry(pass_phrase = "caidao")
+  def s_decry(pass_phrase = "test")
     Crypt::TEA.decrypt(self,pass_phrase)
   end
 
