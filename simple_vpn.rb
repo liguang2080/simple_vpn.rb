@@ -8,3 +8,6 @@ set :environment, :production
 get '/:url' do
   HTTParty.get(params[:url].s_decry)
 end
+
+
+puts "add by local"
