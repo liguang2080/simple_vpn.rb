@@ -1,0 +1,3 @@
+[submodule "hocus"]
+	path = hocus
+	url = git://github.com/tswicegood/hocus.git
