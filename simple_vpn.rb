@@ -1,9 +1,10 @@
 require 'rubygems'
+require "base64"
 require 'sinatra'
 require "httparty"
-require "lib/simple_crypt"
 set :environment, :production
+set :port, 80
 
 get '/:url' do
-  HTTParty.get(params[:url].s_decry)
+  HTTParty.get(Base64.decode64(params[:url]))
 end
